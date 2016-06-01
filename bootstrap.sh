@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ## Change this to the PS version you'd like to use
-PS_VERSION=prestashop_1.6.1.1.zip
+PS_VERSION=prestashop_1.4.11.1.zip
 
 ## Setup and basic tools
 sudo apt-get update && sudo apt-get upgrade -y
@@ -19,7 +19,7 @@ sudo apt-get install -y php5 php5-mcrypt
 ## phpMyAdmin
 sudo apt-get install -y phpmyadmin
 sudo cp /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
-sudo a2enconf phpmyadmin 
+sudo a2enconf phpmyadmin
 sudo service apache2 reload
 
 ## Download Prestashop
